@@ -6,7 +6,6 @@
                 <a href="" class="flex items-center">
                     <span class="font self-center text-2xl whitespace-nowrap">HS.</span>
                 </a>
-     
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 place-items-center">
                 <div>
