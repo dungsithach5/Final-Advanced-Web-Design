@@ -82,38 +82,49 @@ onMounted(async () => {
         :key="item.id"
         class="max-w-xl mb-40 mt-20"
       >
-        <a href="#">
-          <img class="" :src="item.img" alt="" />
-        </a>
-        <div class="text-left">
+        <router-link :to="{ name: 'productdetail', params: { id: item._id } }">
           <a href="#">
-            <h5
-              class="mt-3 text-xl font-semibold tracking-tight text-gray-900"
-            >
-              {{ item.name }}
-            </h5>
+            <img class="" :src="item.img" alt="" />
           </a>
-          <p class="font-medium text-lg text-gray-700">
-            {{ item.japanese }}
-          </p>
-          <p class="mb-3 text-lg text-gray-700">
-            ${{ item.price }}
-          </p>
-        </div>
+          <div class="text-left">
+            <a href="#">
+              <h5
+                class="mt-3 text-xl font-semibold tracking-tight text-gray-900"
+              >
+                {{ item.name }}
+              </h5>
+            </a>
+            <p class="font-medium text-lg text-gray-700">
+              {{ item.japanese }}
+            </p>
+            <p class="mb-3 text-lg text-gray-700">
+              ${{ item.price }}
+            </p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
   
   <div class="relative">
-  <img src="../assets/images/imgbooking.jpg" alt="" class="w-full object-cover h-[800px]">
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-  <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-    <h1 class="text-9xl font-extrabold">BOOKING <br> RESTAURANT NOW</h1>
-    <span class="text-xl font-light tracking-wider">Booking restaurant now and you will get cashback 10%</span>
-    <button class="mt-4 px-7 py-3 bg-white text-black font-semibold rounded-full hover:bg-black hover:text-white">Booking now</button>
-    
+    <img 
+      src="../assets/images/imgbooking.jpg" 
+      alt="" 
+      class="w-full object-cover h-[800px]">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-9xl font-extrabold">
+        BOOKING <br /> RESTAURANT NOW
+      </h1>
+      <span class="text-xl font-light tracking-wider">
+        Booking restaurant now and you will get cashback 10%
+      </span>
+      <button 
+        class="mt-4 px-7 py-3 bg-white text-black font-semibold rounded-full hover:bg-black hover:text-white">
+        Booking now
+      </button>
+    </div>
   </div>
-</div>
 
   <Footer></Footer>
 </template>

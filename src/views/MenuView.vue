@@ -51,7 +51,7 @@ onMounted(async () => {
 <template>
   <NavBar class="bg-black" />
   <img src="../assets/images/headerMenu.png" alt="" class="w-full h-[400px] object-cover">
-  <h1 class="pt-10 pb-7 text-center text-5xl font-extralight tracking-widest">MENU</h1>
+  <h1 class="pt-10 pb-7 text-center text-5xl font-extralight tracking-widest">OUR MENU</h1>
   <div class="max-w-screen-xl mx-auto py-2 flex justify-center gap-6 text-white font-light">
     <button 
       class="bg-black px-14 py-2 border-2 border-black hover:bg-white hover:text-black hover:border-black"
@@ -84,6 +84,7 @@ onMounted(async () => {
       :key="item.id"
       class="max-w-xl mt-14"
     >
+    <router-link :to="{ name: 'productdetail', params: { id: item._id } }">
       <a href="#">
         <img class="" :src="item.img" alt="" />
       </a>
@@ -102,7 +103,29 @@ onMounted(async () => {
           ${{ item.price }}
         </p>
       </div>
+    </router-link>
     </div>
   </div>
+
+  <div class="relative mt-14">
+    <img 
+      src="../assets/images/imgbooking.jpg" 
+      alt="" 
+      class="w-full object-cover h-[800px]">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-9xl font-extrabold">
+        BOOKING <br /> RESTAURANT NOW
+      </h1>
+      <span class="text-xl font-light tracking-wider">
+        Booking restaurant now and you will get cashback 10%
+      </span>
+      <button 
+        class="mt-4 px-7 py-3 bg-white text-black font-semibold rounded-full hover:bg-black hover:text-white">
+        Booking now
+      </button>
+    </div>
+  </div>
+  
   <Footer />
 </template>

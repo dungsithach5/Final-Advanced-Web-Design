@@ -3,13 +3,18 @@
     <div class="absolute inset-0 flex flex-col items-center text-white mt-20">
       <span class="font text-[15rem] font-extrabold tracking-tighter">HIKARI SATO</span>
       <div class="w-full px-44 grid grid-cols-2 font-medium text-lg leading-7 text-justify">
-      <p>
-        Hikari Sato - Experience the exquisite flavors of Japanese ramen.
-        At Hikari Sato, we offer a unique culinary journey with bowls of ramen made from fresh ingredients,
-        rich broth and tender noodles. Each dish is a perfect blend of tradition and creativity,
-        delivering a warm and delightful experience for food enthusiasts.
-      </p>
-    </div>
+        <p>
+          Hikari Sato - Experience the exquisite flavors of Japanese ramen.
+          At Hikari Sato, we offer a unique culinary journey with bowls of ramen made from fresh ingredients, rich broth,
+          and tender noodles. Each dish is a perfect blend of tradition and creativity, delivering a warm and delightful
+          experience for food enthusiasts. Our ramen chefs craft each bowl with precision,
+          ensuring every bite is a harmonious fusion of authentic Japanese flavors and innovative twists.
+          Whether you're a ramen connoisseur or a first-time visitor.
+        </p>
+        <!-- <div class="flex justify-end">
+          <img src="../assets/images/logo1.png" alt="Logo" class="object-cover h-[250px]" />
+        </div> -->
+      </div>
     </div>
   </div>
   <img
