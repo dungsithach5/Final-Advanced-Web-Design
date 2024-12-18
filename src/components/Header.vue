@@ -9,7 +9,6 @@
           and tender noodles. Each dish is a perfect blend of tradition and creativity, delivering a warm and delightful
           experience for food enthusiasts. Our ramen chefs craft each bowl with precision,
           ensuring every bite is a harmonious fusion of authentic Japanese flavors and innovative twists.
-          Whether you're a ramen connoisseur or a first-time visitor.
         </p>
         <!-- <div class="flex justify-end">
           <img src="../assets/images/logo1.png" alt="Logo" class="object-cover h-[250px]" />

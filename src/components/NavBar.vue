@@ -3,16 +3,16 @@
         <div class="w-full md:w-auto" id="navbar-default">
             <ul class="flex items-center p-4 md:p-0 mt-4 md:flex-row md:space-x-6 md:mt-0">
                 <li>
-                    <router-link to="/" class=" py-2 px-3">HOME</router-link>
+                    <router-link to="/">HOME</router-link>
                 </li>
                 <li>
-                    <router-link to="/menu" class=" py-2 px-3">MENU</router-link>
+                    <router-link to="/menu">MENU</router-link>
                 </li>
                 <li>
-                    <a href="#" class=" py-2 px-3">BOOKING</a>
+                    <router-link to="/booking">BOOKING</router-link>
                 </li>
                 <li>
-                    <a href="#" class=" py-2 px-3">CART</a>
+                    <a href="#">CART</a>
                 </li>
             </ul>
         </div>
