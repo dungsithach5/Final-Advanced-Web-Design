@@ -9,13 +9,13 @@
                     <router-link to="/menu">MENU</router-link>
                 </li>
                 <li>
-                    <router-link to="/booking">BOOKING</router-link>
+                    <router-link to="/reservation">RESERVATION</router-link>
                 </li>
                 <li>
-                    <a href="#">CART</a>
+                    <a href="#">ABOUT US</a>
                 </li>
             </ul>
         </div>
-        <span>(+1234) 123 4656 7890</span> 
+        <span>(+84) 090 5694 164</span> 
     </nav>
 </template>

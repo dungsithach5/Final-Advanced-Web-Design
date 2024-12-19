@@ -50,7 +50,15 @@ onMounted(async () => {
 
 <template>
   <NavBar />
-  <img src="../assets/images/headerMenu.png" alt="" class="w-full h-[400px] object-cover">
+  <div class="relative">
+    <img src="../assets/images/headerMenu.png" alt="Header Menu" class="w-full h-[400px] object-cover">
+    <h1 class="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold tracking-widest">
+      MENUS
+    </h1>
+  </div>
+  <h1 class="text-center text-4xl font-bold mt-10">
+        MENUS
+    </h1>
   <div class="max-w-screen-xl mx-auto pt-10 py-2 flex justify-center gap-6 text-black">
     <button 
       class="px-14 py-2 border-b-2 border-black font-medium hover:bg-black hover:text-white"
@@ -77,7 +85,6 @@ onMounted(async () => {
       DESSERTS
     </button>
   </div>
-  <h1 class="pt-10 text-center text-5xl font-m tracking-widest">MENUS</h1>
   <div class="max-w-screen-xl mx-auto grid grid-cols-4 place-items-center gap-6">
     <div
       v-for="item in filteredData"
